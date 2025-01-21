@@ -72,5 +72,57 @@ def logout():
     logout_user()
     return redirect(url_for('login'))
 
+
+
+
+
+
+@app.route('/home/arleon')
+def arleon():
+    return render_template('arleon.html')
+
+@app.route('/home/rana')
+def rana():
+    return render_template('rana.html')
+
+@app.route('/home/barony_of_loth')
+def barony_of_loth():
+    return render_template('barony_of_loth.html')
+
+@app.route('/home/barya')
+def barya():
+    return render_template('barya.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
