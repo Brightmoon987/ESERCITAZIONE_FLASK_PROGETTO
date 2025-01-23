@@ -77,19 +77,27 @@ def logout():
 
 
 
+# Route per le pagine delle fazioni
+
 @app.route('/home/arleon')
+@login_required
 def arleon():
     return render_template('arleon.html')
 
+
 @app.route('/home/rana')
+@login_required
 def rana():
     return render_template('rana.html')
 
 @app.route('/home/barony_of_loth')
+@login_required
 def barony_of_loth():
     return render_template('barony_of_loth.html')
 
+
 @app.route('/home/barya')
+@login_required
 def barya():
     return render_template('barya.html')
 
